@@ -11,7 +11,7 @@ def join_nested_strings(src)
     end
   row += 1 
   end
-  result
+  result.rstrip
 end
 
 test = [[1, 3, 5], [6, 0, 1], ['hello', 3, 'there']]
