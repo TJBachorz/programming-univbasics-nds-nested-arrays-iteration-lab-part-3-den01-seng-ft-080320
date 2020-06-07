@@ -4,9 +4,8 @@ def join_nested_strings(src)
   while row < src.length do
     count = 0 
     while count < src[row].length do
-      if src[row][count].to_i == 0 
-        result = result.concat(src[row][count])
-        result = result.concat(" ")
+      if src[row][count].class == String
+        result += src[row][count] + " "
       end
       count += 1 
     end
